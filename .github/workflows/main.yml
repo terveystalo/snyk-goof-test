@@ -46,8 +46,8 @@ jobs:
 
       - name: Snyk Container
         run: |
-          docker build . -t yourimage:tag
-          snyk container monitor yourimage:tag --file=Dockerfile
+          docker build . -t groof_image:tag
+          snyk container monitor groof_image:tag --file=Dockerfile
         # Rename your image, for testing and failing please add snyk container test before snyk container monitor
 
       - name: Snyk IaC
